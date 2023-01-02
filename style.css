@@ -44,3 +44,27 @@
         grid-column: span 2;
     }
 }
+
+.res-flex-container {
+    --grid-res: 200px;
+    --f-grow: 1;
+    --f-shrink: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-flex-sub-large {
+
+    flex-basis: calc(var(--grid-res)*2);
+    flex-grow: 1;
+    background-color: aqua;
+
+}
+
+.res-flex-sub-small {
+
+    flex-basis: var(--grid-res);
+    flex-grow: 1;
+    background-color: firebrick;
+
+}
